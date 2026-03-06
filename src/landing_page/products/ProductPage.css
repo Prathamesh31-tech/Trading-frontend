@@ -1,0 +1,100 @@
+/* MAIN PAGE */
+
+#productPage{
+  background:#0f172a;
+  color:#e5e7eb;
+  padding-bottom:60px;
+}
+
+/* HERO */
+
+.product-hero{
+  text-align:center;
+  padding:70px 20px;
+}
+
+.product-hero h1{
+  color:white;
+  font-weight:700;
+}
+
+.product-hero p{
+  color:#cbd5f5;
+}
+
+/* SECTIONS */
+
+.product-section{
+  margin-top:80px;
+}
+
+.product-section img{
+  width:100%;
+  border-radius:10px;
+}
+
+.product-section h2{
+  color:white;
+}
+
+.product-section p{
+  color:#cbd5f5;
+}
+
+
+/* UNIVERSE */
+
+.universe-section{
+  margin-top:80px;
+  text-align:center;
+}
+
+.universe-card img{
+  width:200px;
+}
+
+.universe-card p{
+  color:#cbd5f5;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width:992px){
+
+.product-section{
+  text-align:center;
+}
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:768px){
+
+.product-hero h1{
+  font-size:26px;
+}
+
+.product-section{
+  margin-top:50px;
+}
+
+.product-btn{
+  width:100%;
+}
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width:480px){
+
+.product-hero h1{
+  font-size:22px;
+}
+
+.product-hero p{
+  font-size:14px;
+}
+
+}

@@ -1,0 +1,71 @@
+import { useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import "./Login.css";
+
+function Login() {
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios.post("http://localhost:3002/login", form, {
+        withCredentials: true,
+      });
+
+      window.location.href = "http://localhost:3001";
+    } catch (error) {
+      alert("Login Failed ❌");
+    }
+  };
+
+  return (
+    <div className="login-page">
+      <div className="login-card">
+        <h2 className="login-title">Trading Platform Login</h2>
+
+        <form onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label>Email</label>
+            <input
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="input-group">
+            <label>Password</label>
+            <input
+              name="password"
+              type="password"
+              placeholder="Enter your password"
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <button type="submit" className="login-btn">
+            Login
+          </button>
+        </form>
+
+        <p className="signup-text">
+          No account? <Link to="/signup">Signup</Link>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default Login;

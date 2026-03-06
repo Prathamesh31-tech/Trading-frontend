@@ -1,0 +1,506 @@
+.home-page {
+  background: #0f172a;
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+
+/* Card style */
+
+.home-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 40px;
+  margin: 30px auto;
+  width: 90%;
+}
+
+/* HERO */
+
+.hero-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-container{
+  max-width:1100px;
+  margin:auto;
+}
+
+.hero-image {
+  width: 70%;
+  max-width: 750px;
+  margin-bottom: 40px;
+}
+
+/* Title */
+
+.hero-title{
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+/* Text */
+
+.hero-text{
+  font-size:18px;
+  margin-bottom:25px;
+  color:#cbd5f5;
+}
+
+/* Button */
+
+.hero-btn {
+  background: #2962ff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.hero-btn:hover{
+  transform:scale(1.05);
+}
+
+/* GRID LAYOUTS */
+
+.awards-grid,
+.stats-grid,
+.pricing-grid,
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.awards-img,
+.education-img,
+.stats-image img {
+  width: 100%;
+}
+
+/* Pricing */
+
+.price-boxes {
+  display: flex;
+  gap: 20px;
+}
+
+.price-box {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 992px){
+
+.hero-title{
+  font-size:38px;
+}
+
+.hero-text{
+  font-size:16px;
+}
+
+.hero-image{
+  width:85%;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+  .awards-grid,
+  .stats-grid,
+  .pricing-grid,
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title{
+    font-size:30px;
+  }
+
+  .hero-text{
+    font-size:15px;
+  }
+
+  .hero-image {
+    width:100%;
+  }
+
+  .price-boxes{
+    flex-direction:column;
+  }
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+.hero-section{
+  padding:60px 15px;
+}
+
+.hero-title{
+  font-size:26px;
+}
+
+.hero-btn{
+  width:100%;
+}
+
+}
+
+/* Awards Section */
+
+.awards-section h2{
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+.awards-section p{
+  color:#cbd5f5;
+  margin-bottom:20px;
+}
+
+/* Lists */
+
+.awards-lists{
+  display:flex;
+  gap:60px;
+  margin-bottom:25px;
+}
+
+.awards-lists ul{
+  padding-left:18px;
+}
+
+.awards-lists li{
+  margin-bottom:8px;
+}
+
+/* Press logos */
+
+.press-logos{
+  width:80%;
+  max-width:400px;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+.awards-section h2{
+  font-size:26px;
+}
+
+.press-logos{
+  width:100%;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.awards-lists{
+  flex-direction:column;
+  gap:10px;
+}
+
+.awards-section{
+  text-align:center;
+}
+
+.awards-img{
+  width:80%;
+  margin:auto;
+  display:block;
+}
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+.awards-section h2{
+  font-size:22px;
+}
+
+.awards-section p{
+  font-size:14px;
+}
+
+}
+
+/* Stats Section */
+
+.stats-section h2{
+  font-size:32px;
+  margin-bottom:25px;
+}
+
+.stats-section h4{
+  font-size:18px;
+  margin-top:18px;
+  margin-bottom:5px;
+}
+
+.stats-section p{
+  color:#cbd5f5;
+  font-size:15px;
+}
+
+/* Image */
+
+.stats-image img{
+  width:100%;
+  max-width:500px;
+  display:block;
+  margin:auto;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+.stats-section h2{
+  font-size:28px;
+}
+
+.stats-section h4{
+  font-size:17px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.stats-section{
+  text-align:center;
+}
+
+.stats-image img{
+  width:85%;
+  margin-top:20px;
+}
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+.stats-section h2{
+  font-size:24px;
+}
+
+.stats-section h4{
+  font-size:16px;
+}
+
+.stats-section p{
+  font-size:14px;
+}
+
+}
+
+/* Pricing Section */
+
+.pricing-section h2{
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+.pricing-section p{
+  color:#cbd5f5;
+  margin-bottom:15px;
+}
+
+/* Pricing link */
+
+.pricing-link{
+  color:#3b82f6;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.pricing-link:hover{
+  color:#60a5fa;
+}
+
+/* Price Boxes */
+
+.price-box h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.price-box p{
+  font-size:14px;
+  color:#cbd5f5;
+}
+
+/* Hover effect */
+
+.price-box{
+  transition:0.3s;
+}
+
+.price-box:hover{
+  transform:translateY(-5px);
+  background:#243044;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+.pricing-section h2{
+  font-size:28px;
+}
+
+.price-box h1{
+  font-size:32px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.pricing-section{
+  text-align:center;
+}
+
+.price-boxes{
+  flex-direction:column;
+  gap:15px;
+}
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+.pricing-section h2{
+  font-size:24px;
+}
+
+.price-box h1{
+  font-size:28px;
+}
+
+.price-box p{
+  font-size:13px;
+}
+
+}
+
+/* Education Section */
+
+.education-section h2{
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+.education-section p{
+  color:#cbd5f5;
+  margin-bottom:12px;
+}
+
+/* spacing */
+
+.education-mt{
+  margin-top:20px;
+}
+
+/* links */
+
+.education-link{
+  display:inline-block;
+  margin-bottom:10px;
+  color:#3b82f6;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.education-link:hover{
+  color:#60a5fa;
+}
+
+/* image */
+
+.education-img{
+  width:100%;
+  max-width:450px;
+  display:block;
+  margin:auto;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+.education-section h2{
+  font-size:28px;
+}
+
+.education-img{
+  max-width:380px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.education-section{
+  text-align:center;
+}
+
+.education-img{
+  width:80%;
+  margin-bottom:20px;
+}
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+.education-section h2{
+  font-size:24px;
+}
+
+.education-section p{
+  font-size:14px;
+}
+
+.education-link{
+  font-size:14px;
+}
+
+}

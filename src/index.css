@@ -5,9 +5,143 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    padding-top:80px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-link{
+  margin-left: 40px;
+}
+
+
+
+.nav-hover {
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-hover:hover {
+  color: #38bdf8 !important;
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* Logo responsive */
+.navbar-logo{
+  width:200px;
+}
+
+/* Desktop spacing */
+.nav-link{
+  margin-left:40px;
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+  .nav-link{
+    margin-left:0;
+    padding:10px 0;
+  }
+
+  .navbar-logo{
+    width:160px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width:576px){
+
+  .navbar-logo{
+    width:140px;
+  }
+
+}
+
+/* Open Account Section */
+
+.open-account h1{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.open-account p{
+  color:#cbd5f5;
+  margin-bottom:20px;
+}
+
+/* Button */
+
+.signup-btn{
+  width:20%;
+  margin:auto;
+  display: block;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.signup-btn:hover{
+  transform:scale(1.05);
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+.signup-btn{
+  width:35%;
+}
+
+.open-account h1{
+  font-size:34px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.signup-btn{
+  width:50%;
+}
+
+.open-account h1{
+  font-size:28px;
+}
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+.signup-btn{
+  width:80%;
+}
+
+.open-account h1{
+  font-size:24px;
+}
+
+.open-account p{
+  font-size:14px;
+}
+
 }

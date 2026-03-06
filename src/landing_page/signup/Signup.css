@@ -1,0 +1,154 @@
+/* Page background */
+
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+  padding: 40px 20px;
+}
+
+/* Card */
+
+.signup-card {
+  background: #111827;
+  padding: 40px;
+  width: 420px;
+  border-radius: 16px;
+  border: 1px solid #1f2937;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.signup-card:hover{
+  transform: translateY(-4px);
+}
+
+/* Title */
+
+.signup-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+/* Inputs */
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  background: #0f172a;
+  color: #e5e7eb;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Input focus */
+
+.input-group input:focus {
+  border: 1px solid #2962ff;
+  box-shadow: 0 0 8px rgba(41,98,255,0.4);
+}
+
+/* Button */
+
+.signup-btn {
+  width: 100%;
+  padding: 13px;
+  margin-top: 10px;
+  background: #2962ff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: #1e4ed8;
+  transform: scale(1.03);
+}
+
+/* Login link */
+
+.login-text {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.login-text a {
+  color: #2962ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 768px){
+
+.signup-card{
+  width: 90%;
+  padding: 35px;
+}
+
+.signup-title{
+  font-size:22px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:480px){
+
+.signup-page{
+  padding:20px;
+}
+
+.signup-card{
+  width:100%;
+  padding:30px 25px;
+}
+
+.signup-title{
+  font-size:20px;
+}
+
+.input-group input{
+  padding:10px;
+}
+
+.signup-btn{
+  padding:11px;
+}
+
+.login-text{
+  font-size:13px;
+}
+
+}
